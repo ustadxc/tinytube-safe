@@ -6,10 +6,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="ZeynepTube">
+<meta name="apple-mobile-web-app-title" content="ZeynepsTube">
 <meta name="theme-color" content="#5b21b6">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<title>ZeynepTube</title>
+<title>ZeynepsTube</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎈</text></svg>">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
@@ -28,7 +28,7 @@ body{background:linear-gradient(165deg,#5b21b6,#db2777 65%,#f59e0b);padding:env(
 
 <div id="app" class="h-full max-w-2xl mx-auto flex flex-col overflow-y-auto">
   <header class="flex items-center justify-between px-4 py-2 text-white">
-    <h1 class="text-2xl font-extrabold">🎈 ZeynepTube</h1>
+    <h1 class="text-2xl font-extrabold">🎈 ZeynepsTube</h1>
     <button id="lockBtn" class="btn bg-white/25 rounded-full w-11 h-11 text-xl" aria-label="Parent mode">🔒</button>
   </header>
 
@@ -282,7 +282,7 @@ $('pinClr').onclick=()=>{S.pin='';save();renderParent()};
 /* ---------- Home-screen manifest (inline) ---------- */
 try{
   const icon="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='#5b21b6'/><text x='50' y='72' font-size='60' text-anchor='middle'>🎈</text></svg>");
-  const m={name:'ZeynepTube',short_name:'ZeynepTube',display:'standalone',orientation:'portrait',start_url:location.href.split('#')[0],background_color:'#5b21b6',theme_color:'#5b21b6',icons:[{src:icon,sizes:'any',type:'image/svg+xml',purpose:'any'}]};
+  const m={name:'ZeynepsTube',short_name:'ZeynepsTube',display:'standalone',orientation:'portrait',start_url:location.href.split('#')[0],background_color:'#5b21b6',theme_color:'#5b21b6',icons:[{src:icon,sizes:'any',type:'image/svg+xml',purpose:'any'}]};
   const l=document.createElement('link');l.rel='manifest';
   l.href=URL.createObjectURL(new Blob([JSON.stringify(m)],{type:'application/manifest+json'}));
   document.head.appendChild(l);
